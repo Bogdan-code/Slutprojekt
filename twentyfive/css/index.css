@@ -98,7 +98,8 @@ img,video{
     
   }
   .index-main{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     width: 100vw;
     position: absolute;
     top: 0vh;
@@ -168,7 +169,7 @@ img,video{
   }
 
   .katt-logga{
-    position:fixed;
+    position:absolute;
     z-index: 10;
     height: 7vw;
     top:0;
@@ -239,7 +240,8 @@ img,video{
   /* Foto-album */
   .fotoalbum-main{
 
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     width: 100vw;
     position: absolute;
     top: 0vh;
@@ -340,16 +342,19 @@ img,video{
   .cv-main-body{
 
     margin: 0.5vw;
-    height: 80vh;
+    min-height: 100vh;
+    max-height: fit-content;
     width:100vw;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 10vw auto 10vw;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "IMG1 txt1 txt1"
     "txt2 txt2 txt2"
     "txt3 txt3 IMG2"
     ;
+    line-height: 1.5vw;
+    gap: 0;
   }
 
   .cv-main-body .txt1{
@@ -358,6 +363,9 @@ img,video{
   }
   .cv-main-body .txt2{
     grid-area: txt2;
+    display: flex;
+    justify-self: start;
+
 
   }
   .cv-main-body .txt3{
@@ -366,10 +374,14 @@ img,video{
   }
   .cv-main-body .img1{
     grid-area: IMG1;
+    width:9vw;
+    align-self: center;
 
   }
   .cv-main-body .img2{
     grid-area: IMG2;
+    width:9vw;
+    align-self: center;
 
   }
   
