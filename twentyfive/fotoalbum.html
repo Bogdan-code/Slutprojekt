@@ -2,51 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Foto Album</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
   <h2 class="material-icons" id="menu_button">menu</h2>
   <nav class="menu-mobile" id="fotoalbum-menu">
     <a href="index.html">Hem</a>
-    <a href="">JONES</a>
-    <a href="">BONES</a>
+    <a href="fotoalbum.html">FOTOALBUM</a>
+    <a href="project.html">PROJECTS</a>
+    <a href="cv.html">CV</a>
   </nav>
   <div class="fade-layer"></div>
-  <div class="top-fill-div" id="fotoalbum-menu"></div>
+
   <img class="katt-logga" src="img/catlogga.png" alt="Katt Logga">
+
   <div class="fotoalbum-main">
-    <header class="header" id="fotoalbum-menu">
+    <header class="header">
       <nav class="nav1">
         <a href="index.html">Hem</a>
         <a href="fotoalbum.html">FOTOALBUM</a>
       </nav>
       <h1>FOTOALBUM</h1>
       <nav class="nav2">
-        <a href="jones.html">Jones</a>
+        <a href="project.html">PROJECTS</a>
         <a href="cv.html">CV</a>
       </nav>
     </header>
-
-    <section class="section1" id="fotoalbum-i"><img src="img/ute1.jpg" alt="Jag, Tage och Tilly påväg mot Surte"><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum</h3></section>
-    <section class="section2" id="fotoalbum-i"><img src="img/ute2.jpg" alt="Jag, Tage och Tilly"><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum</h3></section>
-    <section class="section3" id="fotoalbum-i"><img src="img/ute3.jpg" alt=""><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum</h3></section>
-    <section class="section4" id="fotoalbum-i"><img src="img/ute4.jpg" alt=""><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum autem praesentium optio nostrum sunt soluta, alias iure distinctio sapiente maxime porro quibusdam </h3></section>
-    <section class="section5" id="fotoalbum-i">
-      <video loop controls autoplay playsinline muted preload="auto">  
-        <source src="img/ute5.mp4" type="video/mp4">
-      </video>
-      <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum autem praesentium optio nostrum sunt soluta
-      </h3>
+    <section class="intro">
+      <h2>Välkommen till mitt fotoalbum</h2>
+      <p>
+        Här har jag samlat några av mina favoritögonblick från utflykter,
+        vardagsäventyr och speciella stunder tillsammans med vänner och familj.
+        Klicka på bilderna för att läsa mer om varje tillfälle!
+      </p>
     </section>
-    <section class="section6" id="fotoalbum-i"><img src="img/ute6.jpg" alt=""><h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae voluptatum autem praesentium optio nostrum sunt soluta, alias iure distinctio sapiente maxime porro quibusdam magnam libero quaerat ab eaque beatae tempora.</h3></section>
-  <footer>
-    <h4>copyright Bogdan Olsson AB © 076-123 12 65| hej@gmail.com </h4>
 
-  </footer>  
+    <section class="gallery">
+      <figure class="card">
+        <img src="img/ute1.jpg" alt="Jag, Tage och Tilly på väg mot Surte">
+        <figcaption>
+          <h3>Sommardag i Surte</h3>
+          <p>En varm dag i juli 2024 när Tage, Tilly och jag promenerade längs älven och hittade en gömd badplats.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute2.jpg" alt="Jag, Tage och Tilly">
+        <figcaption>
+          <h3>Picknick vid sjön</h3>
+          <p>Efter en lång vandring dukade vi upp en enkel picknick med hembakta bullar och kall lemonad.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute3.jpg" alt="Utsikt över bergen">
+        <figcaption>
+          <h3>Utsikt över bergen</h3>
+          <p>Solnedgången färgade himlen rosa och guld, och det kändes som att stå på världens tak.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute4.jpg" alt="Skogsäventyr">
+        <figcaption>
+          <h3>Skogsäventyr</h3>
+          <p>En dimmig morgon då vi följde en liten bäck och hittade den här hemliga gläntan.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card video-card">
+        <video loop controls muted preload="auto">
+          <source src="img/ute5.mp4" type="video/mp4">
+          Your browser doesn’t support HTML5 video.
+        </video>
+        <figcaption>
+          <h3>Vattenfallet</h3>
+          <p>Lyssna på forsens brus när vi stod i svalkan under det gamla vattendraget.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute6.jpg" alt="Kvällspromenad">
+        <figcaption>
+          <h3>Kvällspromenad</h3>
+          <p>De sista solstrålarna dansade över fälten när vi vandrade hemåt efter en lång dag.</p>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="img/ute1.jpg" alt="Jag, Tage och Tilly på väg mot Surte">
+        <figcaption>
+          <h3>Sommardag i Surte</h3>
+          <p>En varm dag i juli 2024 när Tage, Tilly och jag promenerade längs älven och hittade en gömd badplats.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute2.jpg" alt="Jag, Tage och Tilly">
+        <figcaption>
+          <h3>Picknick vid sjön</h3>
+          <p>Efter en lång vandring dukade vi upp en enkel picknick med hembakta bullar och kall lemonad.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute3.jpg" alt="Utsikt över bergen">
+        <figcaption>
+          <h3>Utsikt över bergen</h3>
+          <p>Solnedgången färgade himlen rosa och guld, och det kändes som att stå på världens tak.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute4.jpg" alt="Skogsäventyr">
+        <figcaption>
+          <h3>Skogsäventyr</h3>
+          <p>En dimmig morgon då vi följde en liten bäck och hittade den här hemliga gläntan.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card video-card">
+        <video loop controls muted preload="auto">
+          <source src="img/ute5.mp4" type="video/mp4">
+          Your browser doesn’t support HTML5 video.
+        </video>
+        <figcaption>
+          <h3>Vattenfallet</h3>
+          <p>Lyssna på forsens brus när vi stod i svalkan under det gamla vattendraget.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="img/ute6.jpg" alt="Kvällspromenad">
+        <figcaption>
+          <h3>Kvällspromenad</h3>
+          <p>De sista solstrålarna dansade över fälten när vi vandrade hemåt efter en lång dag.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <h4>copyright Bogdan Olsson AB © 076-123 12 65 | hej@gmail.com </h4>
+    </footer>
   </div>
+
   <script src="js/index.js"></script>
 </body>
 </html>
